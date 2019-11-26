@@ -12,9 +12,9 @@ matrix:
     before_deploy: npm run build
     deploy:
       provider: s3
-      access_key_id: AKIAWPLC2AJP74T6IF5U
+      access_key_id: AKIAWPLC2AJPVKVCUBV3
       secret_access_key:
-        secure: OkQS/OSlZi6hS2BVQuNhqySh11n4HQ9AhAHEeOZIAr10olsmsRPmyxXz0mFENDJHYuPhP0eL43ek72coVf5NeHln45dUH/hAQI6cbkGh13JndyZww2uLUZAf6VQ76+GroznDcApbqj8XbDrIUn0XCM+1+zymb+fBPUbXr4ULFJmwsJs0YGE1BUlL17X/EQtypGZ3OUhTVf3AhCG2k/oJ4/CCRZAprpupf3ZalXgjQrua49+90qCmubQMQC487ZYfXpbMzPv4Bihd2wMiwz46f8SzdYDjQnCqxGRo9Lb2Ywnmt7d/3B003VVG6UGI+3VXk6vrpoBkKVD1qM7glqvoWExwlkMus0DOMY86F8rt9YH8hoBT+9Oc64vJ3UE8ZYTvbffEpK1U7PWo2ltqBCi4k90psUtOV4ZTzI0eltL0JxVCsa7tpAHsW6gDLH30tsEqcJYkXpgEyMhQwW7nh0rh3k6QbIYkCoFB6mA5Tc5EX4XYoFba/Ln2UuL270sN4gjh20gsA/cQgmvRxRYFkiQ76ZpI8bLu+JTHRUagBv1YRX9Yl9EPFwYy8R5B/KqErFYEp9ZoWHkuZ/SQZbwlyQd2xe330Zh4RPTQ9V4m2qzuzG5sdpxzFQUxbmD9ya71OfqvDhfUZVu2uGVlfrPzGzhkeUWGvszLPccGXo4SL6n331U=
+             secure: d0wYdRvHLhIzwLzsr+KkVVE26wUj19NbhsAT97NW8x+aOTuJBnrex7Eb5wTU8CfvB11JEJ6qDqBtwzVUfs390FiofGHs2CR1KSPHx4pkVckU04FRy+UwpZj8D4J6i5BLmllL2iSt/g8eZthsaezwube4gAQDZUnN27e52QsjSjqFzDbL0rCTPzHc/z7BVRXI8nqll9nxSrzGh2mkC3SVU0SIamo7Kj8QDl2OZMgB/BHlvh5o0uxSohtLLF2Y+oN3OlOqSRSt5tvH+F4Q2gyhYbiCYwbLbFCE1aXamf2b7bQ+9kuMaefrhFKtauDYQFgUxWOWbHoRYoyZQgp0i3oTGfKDHtCmwQFnseWqI5K0xx4UrOHgnR6J3Rp1v9eyNvYcwjUIqd8P5QXCHaVI2fHlefHhS4sVXOrBwpZsGP7LAypXvxPQJ1YmcoWEPsn3sbYK4aRq7rIPD5FPH/h5MlGP4EHGmxfT3fGkVXxoNBtLOpAByadewmiVlC8vTXqltfGXHK5CCR5nVkNNWIYeTdMBxmHpAN0T86Q+L6lDPajIHcsUOhR6S1pwLtMJ9np6ze6WuNDNMyrGXEIPKNlsXdmzKsZKAotyN45bw9N2oS8Y+CAylbHpvfvLzzytSbJup7m0AZqkEG7xBsPWDPpCibFzkOTIUTfXCvYBtLivIzXdV8o=
       bucket: pulsesurveys
       local-dir: build
       acl: public_read
@@ -28,4 +28,5 @@ matrix:
     jdk: openjdk11
     before_script:
     - cd server
+
 
